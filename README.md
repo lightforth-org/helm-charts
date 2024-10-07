@@ -26,6 +26,6 @@ To make deployment
 
 ```helm install <projectname> lightforth/lightforth -f custom-values.yaml -n <namespace> --create-namespace```
 
-*Examples*
+**Examples**
 
 ```helm install ms-resume-stage lightforth/lightforth -f custom-values.yaml -n ms-resume-stage --create-namespace```
