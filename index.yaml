@@ -9,6 +9,6 @@ entries:
     name: lightforth
     type: application
     urls:
-    - lightforth-0.1.0.tgz
+    - charts/lightforth-0.1.0.tgz
     version: 0.1.0
 generated: "2024-10-08T21:32:34.589459+01:00"
