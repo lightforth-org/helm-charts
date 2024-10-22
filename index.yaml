@@ -1,3 +1,14 @@
 apiVersion: v1
-entries: {}
-generated: "2024-10-23T00:15:18.710344848+01:00"
+entries:
+  lightforth:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-23T00:17:44.866468254+01:00"
+    description: A Helm chart for Kubernetes
+    digest: df4e361742e2f9d8bfe80714593b89da2e54d2c5257161c551c7c79005940a11
+    name: lightforth
+    type: application
+    urls:
+    - https://helm.lightforth.org/charts/lightforth-0.1.4.tgz
+    version: 0.1.4
+generated: "2024-10-23T00:17:44.857662483+01:00"
