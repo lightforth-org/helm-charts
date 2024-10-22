@@ -53,7 +53,7 @@ spec:
           {{ if .Values.env_secrets.enabled }}
           envFrom:
           - secretRef:
-            name: {{ .Values.env_secrets.name }}
+              name: {{ .Values.env_secrets.name }}
         {{ end }}
       {{- with .Values.volumes }}
       volumes:
