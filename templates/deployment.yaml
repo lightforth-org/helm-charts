@@ -50,11 +50,11 @@ spec:
           volumeMounts:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-          {{ if .Values.env_secrets.enabled }}
+          {{- if .Values.env_secrets.enabled | default false }}
           envFrom:
           - secretRef:
-              name: {{ .Values.env_secrets.name }}
-        {{ end }}
+              name: "{{ .Values.env_secrets.name | default "default-secret" }}"
+          {{- end }}
       {{- with .Values.volumes }}
       volumes:
         {{- toYaml . | nindent 8 }}
@@ -71,3 +71,4 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+
