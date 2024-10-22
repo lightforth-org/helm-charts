@@ -1,5 +1,7 @@
 replicaCount: 1
 
+port: 9091
+
 image:
   repository: nginx
   pullPolicy: IfNotPresent

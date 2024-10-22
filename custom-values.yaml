@@ -1,6 +1,8 @@
 replicaCount: 1
 fullnameOverride: "ms-resume-stage"
 
+port: 9091
+
 image:
   repository: nginx
   pullPolicy: Always
