@@ -40,10 +40,9 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls:
-  - hosts:
-    - "ms-resume-stage.lightforth.org"
-    secretName: ms-resume-stage.lightforth.org
-
+    - hosts:
+        - "ms-resume-stage.lightforth.org"
+      secretName: ms-resume-stage.lightforth.org
 
 autoscaling:
   enabled: false
