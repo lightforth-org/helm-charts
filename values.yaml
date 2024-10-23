@@ -8,8 +8,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
-imagePullSecrets:
-  - name: ""
+# imagePullSecrets:
+#   - name: ""
 nameOverride: ""
 fullnameOverride: ""
 
@@ -74,11 +74,11 @@ resources:
   #   cpu: 100m
   #   memory: 128Mi
 
-livenessProbe: {}
+# livenessProbe:
 #   httpGet:
 #     path: /
 #     port: http
-readinessProbe: {}
+# readinessProbe:
 #   httpGet:
 #     path: /
 #     port: http
